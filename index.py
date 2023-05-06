@@ -7,9 +7,9 @@ intents.members = True
 
 client = commands.Bot(command_prefix='!', intents=intents)
 
-ROLE_ID = "id du role"
-CHANNEL_ID = "id du channel dans lequel vous voulez que le bot sois mentionné"
-LOG_CHANNEL_ID = "id dans lequel vous voulez que les logs appraisses"
+ROLE_ID = ##id du role
+CHANNEL_ID = ##id du channel dans lequel vous voulez que le bot sois mentionné
+LOG_CHANNEL_ID = ##id dans lequel vous voulez que les logs appraisses
 
 
 @client.event
