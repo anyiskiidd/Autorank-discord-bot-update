@@ -10,5 +10,12 @@ After that you have to config the index with your parameters.
 
 When all the Library is downloaded, you juste have to use ``Python3 index.py`` and the bot will work !
 
+ALSO ! think about remove these "" before and afters the:
+
+```ROLE_ID = "1104376276988465162"
+CHANNEL_ID = "1104376365970620476"
+LOG_CHANNEL_ID = "1104413731619872789"
+```
+
 Good use !
 
