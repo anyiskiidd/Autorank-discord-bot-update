@@ -8,7 +8,7 @@ In the terminal, use: ``pip install -U discord``
 
 After that you have to config the index with your parameters.
 
-When all the Library is downloaded, you juste have to use ````Python3 index.py`` and the bot will work !
+When all the Library is downloaded, you juste have to use ``Python3 index.py`` and the bot will work !
 
 Good use !
 
