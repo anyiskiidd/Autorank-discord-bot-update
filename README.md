@@ -79,7 +79,7 @@ You can [download](https://github.com/F4llenSys/Autorank-discord-bot/tree/main) 
 
 > **If you have any problems, go to:**
 
-<a href="https://discord.gg/211" target="_blank"><img src="https://cdn.discordapp.com/attachments/1086955172422500382/1086955234280083526/VE_Project_4.gif" alt="discord211" style="height: 80px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>*``[CLICK ON TO JOIN THE DISCORD](https://discord.gg/211)``*
+<a href="https://discord.gg/211" target="_blank"><img src="https://cdn.discordapp.com/attachments/1086955172422500382/1086955234280083526/VE_Project_4.gif" alt="discord211" style="height: 80px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a><a href="https://discord.gg/211" rel="_blank">*``CLICK ON TO JOIN THE DISCORD``*</a>
 
 > **And open a "Autre Problème" Ticket.**
 
