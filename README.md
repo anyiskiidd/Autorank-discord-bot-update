@@ -93,5 +93,5 @@ You can [download](https://github.com/F4llenSys/Autorank-discord-bot/tree/main) 
 
 > Discord : [Discord 211](https://discord.gg/211) &nbsp;&middot;&nbsp;
 > GitHub : [@F4llenSys](https://github.com/F4llenSys) &nbsp;&middot;&nbsp;
-> Youtube : [Youtube](https://youtube.com/@f4llenFn)
+> Youtube : [@F4llenFn](https://youtube.com/@f4llenFn)
 
