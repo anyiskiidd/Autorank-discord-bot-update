@@ -12,9 +12,12 @@ When all the Library is downloaded, you juste have to use ``Python3 index.py`` a
 
 ALSO ! think about remove these "" before and afters the:
 
-```ROLE_ID = "1104376276988465162"
-CHANNEL_ID = "1104376365970620476"
-LOG_CHANNEL_ID = "1104413731619872789"
+```
+ROLE_ID = 1086755223525130281
+CHANNEL_ID = 1104309061383622756
+LOG_CHANNEL_ID = 1104366697412042832
+BL_ROLE_ID = 1086755246442811472
+
 ```
 
 Good use !
