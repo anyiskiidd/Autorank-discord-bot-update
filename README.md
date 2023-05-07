@@ -10,7 +10,7 @@
 <h4 align="center">A student coding learner <a href="http://ctf.ccxi.eu/" target="_blank">Owner of an Informatic ctf platform</a>.</h4>
 
 <p align="center">
-<a href="https://paypal.me/f4llensys" rel="_blank"><img id="donSvg" src="https://icon-library.com/images/donate-icon/donate-icon-16.jpg" alt="donateSvg"></a>
+<a href="https://paypal.me/f4llensys" rel="_blank"><img style="height: 55px;! width: 80px;!" id="donSvg" src="https://cdn-icons-png.flaticon.com/512/2904/2904845.png" alt="donateSvg"></a>
 </p>
 <p align="center"><strong><em><mark>↑ Donate ↑</mark></em></strong></p>
 
