@@ -1,39 +1,45 @@
 import discord
 from discord.ext import commands
 from datetime import datetime
+from discord import Game, Activity, ActivityType
+import pytz
+from datetime import datetime
+
+tz = pytz.timezone('Europe/Paris')
+
+date_str = datetime.now(tz).strftime('%A %d %B %Y')
+heure_str = datetime.now(tz).strftime('%H:%M:%S')
+
+date_str = datetime.utcnow().strftime('%A %d %B %Y')
+heure_str = datetime.utcnow().strftime('%H:%M:%S')
 
 intents = discord.Intents.default()
 intents.members = True
 
 client = commands.Bot(command_prefix='!', intents=intents)
 
-ROLE_ID = role a ajouter au membre
-CHANNEL_ID = channel dans lequel les mmebres devront mentionner le bot
-LOG_CHANNEL_ID = le channel de logs du bot
-BL_ROLE_ID = le role qui fait que quand un membre laura il ne pourra plus se faire autorank
+ROLE_ID = 1086755223525130281
+CHANNEL_ID = 1104309061383622756
+LOG_CHANNEL_ID = 1104366697412042832
+BL_ROLE_ID = 1086755246442811472
 
 
 @client.event
 async def on_ready():
-    print(" ____        _     _____          _     _ 
-           |  _ \      | |   |  __ \        | |   | |
-            | |_) | ___ | |_  | |__) | __ ___| |_  | |
-            |  _ < / _ \| __| |  ___/ '__/ _ \ __| | |
-            | |_) | (_) | |_  | |   | | |  __/ |_  |_|
-            |____/ \___/ \__| |_|   |_|  \___|\__| (_)
-                                           ")
+    await client.change_presence(activity=Activity(type=ActivityType.streaming, name="discord.gg/211"))
+    print('Bot Prêt')
 
 
 @client.event
 async def on_member_update(before, after):
     role = after.guild.get_role(ROLE_ID)
     if role is not None:
-        if ("tag1" in before.name or "tag2" in before.name) and not ("tag1" in after.name or "tag2" in after.name):
+        if ("211" in before.name or "²¹¹" in before.name) and not ("211" in after.name or "²¹¹" in after.name):
             if role in before.roles:
                 await after.remove_roles(role)
                 message = f"{after.mention} a perdu le rôle {role.name}"
                 print(message)
-        elif ("tag1" not in after.name and "tag2" not in after.name):
+        elif ("211" not in after.name and "²¹¹" not in after.name):
             if role in after.roles:
                 await after.remove_roles(role)
                 message = f"{after.mention} a perdu le rôle {role.name}"
@@ -44,9 +50,9 @@ async def on_member_update(before, after):
 async def on_message(message):
     if not message.author.bot and client.user in message.mentions:
         member = message.author
-        if "tag1" in member.name or "tag2" in member.name:
+        if "211" in member.name or "²¹¹" in member.name:
             if message.channel.id == CHANNEL_ID and not ("@everyone" in message.content or "@here" in message.content):
-                bl_role = message.guild.get_role(BL_ROLE_ID) # Récupère le rôle "(role qui fait que quand la personne l'a il ne peut plus se faire autorank)"
+                bl_role = message.guild.get_role(BL_ROLE_ID) # Récupère le rôle "bl 211"
                 role = message.guild.get_role(ROLE_ID) # Récupère le rôle à ajouter
                 if role is not None:
                     if bl_role in member.roles:
@@ -58,10 +64,10 @@ async def on_message(message):
                         reply_msg = f'{member.mention}, le rôle "{role.name}" vous a été donné avec succès !'
 
                         log_embed = discord.Embed(title=f"Nouveau Log Autorank !", color=discord.Color.from_rgb(25, 25, 25))
-                        log_embed.add_field(name="Modérateur", value=f"<@id de votre bot>")
+                        log_embed.add_field(name="Modérateur", value=f"<@1104141853294612601>")
                         log_embed.add_field(name="Membre", value=f"{member.mention}")
                         log_embed.add_field(name="Rôle donné", value=f"{role.mention}")
-                        log_embed.set_footer(text=f"Donné le {datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')}")
+                        log_embed.set_footer(text=f"Donné le {date_str} à {heure_str}")
 
                         log_channel = client.get_channel(LOG_CHANNEL_ID)
                         if log_channel is not None:
@@ -84,7 +90,9 @@ async def on_message(message):
 
     await client.process_commands(message)
 
+    
 
 
 
-client.run('token')
+
+client.run('MTEwNDE0MTg1MzI5NDYxMjYwMQ.GPxoIL.En43BlFxE0ywWB0UStCNwMOxoQoS-y9jXINMXk')
