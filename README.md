@@ -70,6 +70,10 @@ $ Python3 index.py
 
 You can [download](https://github.com/F4llenSys/Autorank-discord-bot/tree/main) the latest version of the bot here.
 
+## Crédits
+
+BIG DEDICACE A MON BB Y
+
 
 ## Related
 
