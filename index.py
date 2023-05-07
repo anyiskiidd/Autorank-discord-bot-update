@@ -18,10 +18,10 @@ intents.members = True
 
 client = commands.Bot(command_prefix='!', intents=intents)
 
-ROLE_ID = 1086755223525130281
-CHANNEL_ID = 1104309061383622756
-LOG_CHANNEL_ID = 1104366697412042832
-BL_ROLE_ID = 1086755246442811472
+ROLE_ID = ID of the role that you want the bot to give to the user who à him
+CHANNEL_ID = IF of the chanel that you want the users to @ the bot
+LOG_CHANNEL_ID = the ID of the channel that you want the bot to send the logs (to who he gave the role, when, which role..)
+BL_ROLE_ID = ID of the "bl role", the role that you want if a user have it and if he @ the bot, the bot don't give him the rôle.
 
 
 @client.event
@@ -34,12 +34,12 @@ async def on_ready():
 async def on_member_update(before, after):
     role = after.guild.get_role(ROLE_ID)
     if role is not None:
-        if ("211" in before.name or "²¹¹" in before.name) and not ("211" in after.name or "²¹¹" in after.name):
+        if ("tag1" in before.name or "tag2" in before.name) and not ("tag1" in after.name or "tag2" in after.name):
             if role in before.roles:
                 await after.remove_roles(role)
                 message = f"{after.mention} a perdu le rôle {role.name}"
                 print(message)
-        elif ("211" not in after.name and "²¹¹" not in after.name):
+        elif ("tag1" not in after.name and "tag2" not in after.name):
             if role in after.roles:
                 await after.remove_roles(role)
                 message = f"{after.mention} a perdu le rôle {role.name}"
@@ -50,7 +50,7 @@ async def on_member_update(before, after):
 async def on_message(message):
     if not message.author.bot and client.user in message.mentions:
         member = message.author
-        if "211" in member.name or "²¹¹" in member.name:
+        if "tag1" in member.name or "tag2" in member.name:
             if message.channel.id == CHANNEL_ID and not ("@everyone" in message.content or "@here" in message.content):
                 bl_role = message.guild.get_role(BL_ROLE_ID) # Récupère le rôle "bl 211"
                 role = message.guild.get_role(ROLE_ID) # Récupère le rôle à ajouter
@@ -64,7 +64,7 @@ async def on_message(message):
                         reply_msg = f'{member.mention}, le rôle "{role.name}" vous a été donné avec succès !'
 
                         log_embed = discord.Embed(title=f"Nouveau Log Autorank !", color=discord.Color.from_rgb(25, 25, 25))
-                        log_embed.add_field(name="Modérateur", value=f"<@1104141853294612601>")
+                        log_embed.add_field(name="Modérateur", value=f"<@ID OF YOUR BOT>")
                         log_embed.add_field(name="Membre", value=f"{member.mention}")
                         log_embed.add_field(name="Rôle donné", value=f"{role.mention}")
                         log_embed.set_footer(text=f"Donné le {date_str} à {heure_str}")
@@ -95,4 +95,4 @@ async def on_message(message):
 
 
 
-client.run('MTEwNDE0MTg1MzI5NDYxMjYwMQ.GPxoIL.En43BlFxE0ywWB0UStCNwMOxoQoS-y9jXINMXk')
+client.run('TOKEN')
