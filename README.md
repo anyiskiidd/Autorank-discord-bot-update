@@ -40,7 +40,7 @@
 
 ## How To Use
 
-To install the depencies and run this application, you'll need [Vscode](https://code.visualstudio.com/) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To install the depencies and run this application, you'll need [Vscode](https://code.visualstudio.com/) and [Node.js](https://nodejs.org/en/download/) (which comes with [Python](https://www.python.org/downloads/)) installed on your computer. From your command line:
 
 ```bash
 # Download the main
