@@ -63,7 +63,7 @@ $ Python3 index.py
 ```
 
 > **Note**
-> You must use VScode to use that botn or you can just use it by the CMD. (No features on Linux)
+> You must use VScode to use that bot or you can just use it by the CMD. (No features on Linux)
 
 
 ## Download
