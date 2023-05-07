@@ -1,24 +1,97 @@
-# Autorank-discord-bot
-This Autorank bot is make for that when a Member @ your bot with a predifined tag in his **DISCORD PSEUDO**, the bot give him a rôle spécifiied.
 
-Before all things, you have to download Python, at this link: `` https://www.python.org/downloads/ ``
+<h1 align="center">
+  <br>
+  <a href="https://github.com/F4llenSys"><img border-radius=20px src="https://avatars.githubusercontent.com/u/131175492?s=400&u=80d6fa4a85a6a141a97416e7fcb633ccdc74e5eb&v=4" rel="_blank" alt="github fallen" width="200"></a>
+  <br>
+  F4llen-Sys
+  <br>
+</h1>
 
-Next, download the index and open it on Vscode.
-In the terminal, use: ``pip install -U discord``
+<h4 align="center">A student coding learner <a href="http://ctf.ccxi.eu/" target="_blank">Owner of an Informatic ctf platform</a>.</h4>
 
-After that you have to config the index with your parameters.
+<p align="center">
+<a href="https://paypal.me/f4llensys" rel="_blank"><img id="donSvg" src="https://icon-library.com/images/donate-icon/donate-icon-16.jpg" alt="donateSvg"></a>
+</p>
+<p align="center"><strong><em><mark>↑ Donate ↑</mark></em></strong></p>
 
-When all the Library is downloaded, you juste have to use ``Python3 index.py`` and the bot will work !
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  <a href="#support">support</a>
+</p>
 
-ALSO ! think about remove these "" before and afters the:
+
+
+## Key Features
+
+* Autorank bot with a "Tag" prédifined
+  - When a person who have the predifined tag in his Username à the bot, the bot give him a spécified rôle.
+* Bl rank
+  - You can, if you want, associate a rank to the "Bl rank", its a rank which when a people who have the rank @ the bot, the bot will don't guve him the predifined rôle.
+* Fastest as possible.  
+* Usable as if you don't code usually.
+* [Discord 211](https://discord.gg/211) Support
+* Logs of the Bot in a predifined channel. (To who he gave the role, when..)
+* And a personnal statut, like: (**Playing**: discord.gg/211)
+
+
+## How To Use
+
+To clone and run this application, you'll need [Vscode](https://code.visualstudio.com/) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Download the main
+$ Download the main at the [Download link](https://github.com/F4llenSys/Autorank-discord-bot)
+
+# Open the Main with VScode
+$ File/Open Folder/Autorank-discord-bot-main
+
+# Install the Discord depencie
+$ pip install -U discord 
+
+# Install the pytz depencie
+$ pip install pytz
+
+# Run the app
+$ Python3 index.py
+ 
+      --> And good use !
 
 ```
-ROLE_ID = 1086755223525130281
-CHANNEL_ID = 1104309061383622756
-LOG_CHANNEL_ID = 1104366697412042832
-BL_ROLE_ID = 1086755246442811472
 
-```
+> **Note**
+> You must use VScode to use that botn or you can just use it by the CMD. (No features on Linux)
 
-Good use !
+
+## Download
+
+You can [download](https://github.com/F4llenSys/Autorank-discord-bot/tree/main) the latest version of the bot here.
+
+
+## Related
+
+[My CTF]( https://fallenctf.000webhostapp.com/) - Web version of F4llen
+
+## Support
+
+> **If you have any problems, go to:**
+
+<a href="https://discord.gg/211" target="_blank"><img src="https://cdn.discordapp.com/attachments/1086955172422500382/1086955234280083526/VE_Project_4.gif" alt="discord211" style="height: 80px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>*``CLICK ON TO JOIN THE DISCORD``*
+
+> **And open a "Autre Problème" Ticket.**
+
+
+
+## License
+
+> @F4llen/211 Corporation - discord.gg/211 - @2023
+
+---
+
+> Discord : [Discord 211](https://discord.gg/211) &nbsp;&middot;&nbsp;
+> GitHub : [@F4llenSys](https://github.com/F4llenSys) &nbsp;&middot;&nbsp;
+> Youtube : [Youtube](https://youtube.com/@f4llenFn)
 
