@@ -1,0 +1,23 @@
+{
+    "token": "",
+    "autorole": {
+        "1105077663112122389": {
+            "roleid": 1105221642034090185,
+            "message": "ah",
+            "tagName": {
+                "required": false,
+                "tag": ""
+            }
+        }
+    },
+    "bl-role": [],
+    "autoTags": {
+        "CHAD": 1105080479188795454
+    },
+    "logSettings": {
+        "logChannel": 1105087062404775956,
+        "deleteMessage": "Supprimé le {date_str} à {heure_str}",
+        "addMessage": "Ajouté le {date_str} à {heure_str}",
+        "color": [255, 0, 0] 
+    }
+}
